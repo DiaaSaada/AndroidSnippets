@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_dropdown"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        app:errorTextAppearance="@style/error_appearance">
+
+        <TextView
+            android:id="@+id/label_dropdown"
+            style="@style/form_inline_label"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/label_brand"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+        <Spinner
+            android:id="@+id/dropdown"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:entries="@array/select_items"
+            android:prompt="@string/select__"
+            android:spinnerMode="dropdown"
+            android:textSize="13sp"
+            android:theme="@style/ThemeSpinner"
+            tools:listitem="@layout/dropdown_list_item" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
