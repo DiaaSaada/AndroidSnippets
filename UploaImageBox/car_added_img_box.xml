@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/img_box"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:paddingBottom="5dp"
+    android:paddingLeft="1dp"
+    android:animateLayoutChanges="true"
+    android:paddingRight="1dp">
+
+    <RelativeLayout
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:background="@color/text_color"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/iv_added_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+
+        <ProgressBar
+            android:id="@+id/img_upload_progressbar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#4D000000"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/blue_grey_200"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+
+
+
+        <ImageButton
+            android:id="@+id/btn_status"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:visibility="gone"
+            android:animateLayoutChanges="true"
+            android:background="@android:color/transparent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_done_24" />
+
+
+
+        <ImageView
+            android:id="@+id/cancel_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+
+            android:background="#80000000"
+            android:src="@drawable/ic_close_box_outline_white_24dp"
+            android:visibility="visible" />
+
+        <!--android:src="@drawable/ic_close_box_outline_white_24dp"-->
+
+
+    </RelativeLayout>
+</LinearLayout>
